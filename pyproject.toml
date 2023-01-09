@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "posthoc-xai"
+version = "0.0.1"
+description = "Post-hoc model-agnostic analysis blocks for explainable AI."
+authors = ["MindsDB Inc. <hello@mindsdb.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{include = "posthoc_xai"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
