@@ -9,6 +9,10 @@ packages = [{include = "posthoc_xai"}]
 
 [tool.poetry.dependencies]
 python = ">=3.7,<3.10"
+colorlog = "^6.5.0"
+pandas = "^1"
+type_infer = ">=0.0.9"
+dataprep_ml = ">=0.0.7"
 
 
 [build-system]
