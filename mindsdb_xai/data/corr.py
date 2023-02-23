@@ -44,3 +44,6 @@ class DataCorrelation(DataInsight):
             plt.show()
 
         return cm
+
+    def export(self) -> str:
+        return self.insight['correlation_matrix'].to_json()
