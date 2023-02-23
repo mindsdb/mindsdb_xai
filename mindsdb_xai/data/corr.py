@@ -36,7 +36,7 @@ class DataCorrelation(DataInsight):
 
     def explain(self, df: pd.DataFrame) -> Dict[str, object]:
         log.info(f"{self.__class__.__name__} - Generating insight...")  # noqa
-        self.insight["correlation_matrix"] = df.corr(numeric_only=True)
+        self.insight["correlation_matrix"] = df.corr()
         self.insight["column_names"] = df.columns
         return self.insight
 
