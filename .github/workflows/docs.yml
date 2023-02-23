@@ -1,4 +1,4 @@
-name: Build posthoc_xai Documentation
+name: Build mindsdb_xai Documentation
 
 on:
   push:

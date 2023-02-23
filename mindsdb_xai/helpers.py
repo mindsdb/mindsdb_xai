@@ -9,8 +9,8 @@ def initialize_log():
     handler.setFormatter(colorlog.ColoredFormatter())
 
     logging.basicConfig(handlers=[handler])
-    log = logging.getLogger(f'posthoc_xai-{pid}')
-    log_level = os.environ.get('POSTHOC_XAI_LOG', 'DEBUG')
+    log = logging.getLogger(f'mindsdb_xai-{pid}')
+    log_level = os.environ.get('MINDSDB_XAI_LOG', 'DEBUG')
     log.setLevel(log_level)
     return log
 

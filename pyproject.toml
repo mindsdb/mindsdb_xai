@@ -1,18 +1,19 @@
 [tool.poetry]
-name = "posthoc-xai"
-version = "0.0.1"
-description = "Post-hoc model-agnostic analysis blocks for explainable AI."
+name = "mindsdb-xai"
+version = "0.0.2"
+description = "Tools and utilities for explainable AI."
 authors = ["MindsDB Inc. <hello@mindsdb.com>"]
 license = "GPL-3.0"
 readme = "README.md"
-packages = [{include = "posthoc_xai"}]
+packages = [{include = "mindsdb_xai"}]
 
 [tool.poetry.dependencies]
 python = ">=3.7,<3.10"
 colorlog = "^6.5.0"
 pandas = "^1"
 type_infer = ">=0.0.9"
-dataprep_ml = ">=0.0.7"
+dataprep_ml = ">=0.0.9"
+seaborn = "^0.12.0"
 
 
 [build-system]

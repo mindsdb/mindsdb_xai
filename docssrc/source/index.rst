@@ -4,13 +4,13 @@
    contain the root ``toctree`` directive.
 
 ****************************************
-MindsDB Post-Hoc XAI
+MindsDB XAI
 ****************************************
 
 :Release: |release|
 :Date: |today|
 |
-Welcome to the ``posthoc_xai`` documentation. ``posthoc_xai`` is a Python package aimed at providing model-agnostic post-hoc explainablility techniques for machine learning models.
+Welcome to the ``mindsdb_xai`` documentation. ``mindsdb_xai`` is a Python package aimed at providing explainablility techniques for machine learning models.
 
 Quick Guide
 =======================
@@ -21,18 +21,18 @@ Quick Guide
 Installation
 ============
 
-You can install ``posthoc_xai`` as follows:
+You can install ``mindsdb_xai`` as follows:
 
 .. code-block:: bash
 
-   pip install posthoc_xai
+   pip install mindsdb_xai
 
 We recommend doing the above inside a newly-created python virtual environment.
 
 Setting up a dev environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Clone the repository
-- Run ``cd posthoc_xai && pip install --editable .``
+- Run ``cd mindsdb_xai && pip install --editable .``
 - Add it to your python path (e.g. by adding ``export PYTHONPATH='/where/you/cloned/repo':$PYTHONPATH`` as a newline at the end of your ``~/.bashrc`` file)
 - Check that the unit-tests are passing by going into the directory where you cloned and running: ``python -m unittest discover tests``
 
@@ -71,14 +71,14 @@ In general, we follow the `fork-and-pull <https://docs.github.com/en/github/coll
 3. Make changes and commit them
 4. Make sure that the CI tests pass. You can run the test suite locally with ``flake8 .`` to check style and ``python -m unittest discover tests`` to run the automated tests. This doesn't guarantee it will pass remotely since we run on multiple envs, but should work in most cases.
 5. Push your local branch to your fork
-6. Submit a pull request from your repo to the ``staging`` branch of ``mindsdb/posthoc_xai`` so that we can review your changes. Be sure to merge the latest from staging before making a pull request!
+6. Submit a pull request from your repo to the ``staging`` branch of ``mindsdb/mindsdb_xai`` so that we can review your changes. Be sure to merge the latest from staging before making a pull request!
 
 .. note:: You will need to sign a CLI agreement for the code since the repository is under a GPL license.
 
 
 Feature and Bug reports
 ^^^^^^^^^^^^^^^^^^^^^^^^
-We use GitHub issues to track bugs and features. Report them by opening a `new issue <https://github.com/mindsdb/posthoc_xai/issues/new/choose>`_ and fill out all of the required inputs.
+We use GitHub issues to track bugs and features. Report them by opening a `new issue <https://github.com/mindsdb/mindsdb_xai/issues/new/choose>`_ and fill out all of the required inputs.
 
 
 Code review process
@@ -106,7 +106,7 @@ Join our mission of democratizing machine learning and allowing developers to be
 
 Contributor Code of Conduct
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Please note that this project is released with a `Contributor Code of Conduct <https://github.com/mindsdb/mindsdb_evaluator/blob/stable/CODE_OF_CONDUCT.md>`_. By participating in this project, you agree to abide by its terms.
+Please note that this project is released with a `Contributor Code of Conduct <https://github.com/mindsdb/mindsdb_xai/blob/stable/CODE_OF_CONDUCT.md>`_. By participating in this project, you agree to abide by its terms.
 
 
 License
@@ -117,7 +117,7 @@ License
     <img src="https://img.shields.io/pypi/l/lightwood" alt="PyPI - License">
     </embed>
 
-| `License <https://github.com/mindsdb/mindsdb_evaluator/blob/stable/LICENSE>`_
+| `License <https://github.com/mindsdb/mindsdb_xai/blob/stable/LICENSE>`_
 
 
 Other Links

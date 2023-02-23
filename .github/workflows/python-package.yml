@@ -1,4 +1,4 @@
-name: posthoc_xai Tests Workflow
+name: mindsdb_xai Tests Workflow
 
 on:
   push:

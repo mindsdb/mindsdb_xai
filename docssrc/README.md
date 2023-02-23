@@ -1,5 +1,5 @@
 ## Compiling the docs
-- Make sure you are in `docssrc`, then follow the instructions under `run` in our [documentation building github actions job](https://github.com/mindsdb/type_infer/blob/stable/.github/workflows/docs.yml#L21)
+- Make sure you are in `docssrc`, then follow the instructions under `run` in our [documentation building github actions job](https://github.com/mindsdb/mindsdb_xai/blob/stable/.github/workflows/docs.yml#L21)
 - Go into the newly built docs and start a server to see them: `cd ../docs && python -m http.server`
 - Access at: 0.0.0.0:8000 or alternatively, you can just open the `index.html` with a browser and that should work too.
 
