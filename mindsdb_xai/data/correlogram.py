@@ -43,8 +43,8 @@ class DataCorrelogram(DataInsight):
         if df is not None:
             self.explain(df)
 
-        cols = self.insight['cols']
-        hists = self.insight['hists']
-        scatters = self.insight['scatters']
+        # cols = self.insight['cols']
+        # hists = self.insight['hists']
+        # scatters = self.insight['scatters']
 
         raise NotImplementedError
