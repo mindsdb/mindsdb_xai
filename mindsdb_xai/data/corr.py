@@ -23,7 +23,7 @@ class DataCorrelation(DataInsight):
         self.visualization_params = {
             'data': {
                 'texttemplate': "%{z}",
-                'textfont': {"size": 20},
+                'textfont': {"size": 14},
                 'colorscale': 'blackbody'
             },
             'layout': {
@@ -57,8 +57,8 @@ class DataCorrelation(DataInsight):
         viz_class = getattr(importlib.import_module(self.visualization_params['module']),
                             self.visualization_params['class'])
         data = viz_class(
-            text=self.insight['correlation_matrix'],
-            z=self.insight['correlation_matrix'],
+            text=self.insight['correlation_matrix'].round(2),
+            z=self.insight['correlation_matrix'].round(2),
             x=self.insight['column_names'],
             y=self.insight['column_names'],
             **self.visualization_params['data']
