@@ -13,5 +13,10 @@ class TestDataCorrelation(unittest.TestCase):
 
         self.assertTrue(isinstance(explanation, dict))
         self.assertEqual(list(explanation.keys()), ['correlation_matrix', 'column_names'])
-        self.assertTrue(isinstance(explanation['column_names'], pd.Index))
+        self.assertTrue(isinstance(explanation['column_names'], list))
         self.assertTrue(isinstance(explanation['correlation_matrix'], pd.DataFrame))
+
+        seralized = explainer.export()
+        self.assertTrue(isinstance(seralized, str))
+
+        explainer.visualize()
